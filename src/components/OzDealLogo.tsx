@@ -17,36 +17,9 @@ export default function OzDealLogo({ className = "", size = "md" }: OzDealLogoPr
   }[size];
 
   // State machine for logo loading to ensure 100% resilience:
-  // 1. "imgur-direct" -> Try direct Imgur image URL (https://i.imgur.com/3cKdp6M.png)
-  // 2. "imgur-direct-jpg" -> Try direct Imgur JPG URL (https://i.imgur.com/3cKdp6M.jpeg)
-  // 3. "local-esm" -> Try Vite's ESM bundled PNG from assets
-  // 4. "fallback-svg" -> Fallback to handcrafted beautiful responsive Vector
-  const [loadState, setLoadState] = useState<"imgur-direct" | "imgur-direct-jpg" | "local-esm" | "fallback-svg">("imgur-direct");
-
-  // If the state is trying one of the images, render it with dynamic onError handlers
-  if (loadState === "imgur-direct") {
-    return (
-      <img
-        src="https://i.imgur.com/3cKdp6M.png"
-        alt="OzDeal Logo Imgur PNG"
-        className={`${dimensions} object-contain transition-all duration-300 group-hover:scale-105 ${className}`}
-        onError={() => setLoadState("imgur-direct-jpg")}
-        referrerPolicy="no-referrer"
-      />
-    );
-  }
-
-  if (loadState === "imgur-direct-jpg") {
-    return (
-      <img
-        src="https://i.imgur.com/3cKdp6M.jpg"
-        alt="OzDeal Logo Imgur JPG"
-        className={`${dimensions} object-contain transition-all duration-300 group-hover:scale-105 ${className}`}
-        onError={() => setLoadState("local-esm")}
-        referrerPolicy="no-referrer"
-      />
-    );
-  }
+  // 1. "local-esm" -> Try Vite's ESM bundled PNG from assets (highly reliable and bundled)
+  // 2. "fallback-svg" -> Fallback to handcrafted beautiful responsive Vector
+  const [loadState, setLoadState] = useState<"local-esm" | "fallback-svg">("local-esm");
 
   if (loadState === "local-esm") {
     return (
