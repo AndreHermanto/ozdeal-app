@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-[#003b73] text-white/90 pt-16 pb-12 mt-auto border-t border-blue-900/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 pb-12 border-b border-white/10">
-          
+           
           {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
