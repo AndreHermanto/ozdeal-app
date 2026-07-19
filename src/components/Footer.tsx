@@ -1,20 +1,16 @@
 import { HelpCircle, MessageSquare, MapPin, ShieldCheck, Heart } from "lucide-react";
+import OzDealLogo from "./OzDealLogo";
 
 export default function Footer() {
   return (
     <footer className="bg-[#003b73] text-white/90 pt-16 pb-12 mt-auto border-t border-blue-900/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 pb-12 border-b border-white/10">
-           
+          
           {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img 
-                src="/ozdeal.png" 
-                alt="OzDeal Logo" 
-                className="h-9 w-auto object-contain bg-white px-2 py-1.5 rounded-xl shadow-sm" 
-                referrerPolicy="no-referrer" 
-              />
+              <OzDealLogo size="sm" className="bg-white/10 p-1 rounded-xl shadow-inner border border-white/10" />
               <span className="font-display text-lg font-bold tracking-tight">OzDeal Australia</span>
             </div>
             <p className="text-sm text-slate-300 leading-relaxed max-w-sm">
