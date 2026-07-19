@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { CITY_RATES, formatCurrency } from "../utils";
+// @ts-ignore
+import sydneyToMonasBg from "../assets/images/sydney_to_monas_clean_1784478302269.jpg";
 
 interface HomeViewProps {
   setView: (view: "home" | "calculator") => void;
@@ -93,7 +95,7 @@ export default function HomeView({ setView, faqRef }: HomeViewProps) {
         {/* Subtle decorative background graphic (Sydney Opera House to Monas) */}
         <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.14] select-none flex items-center justify-center transition-opacity duration-1000">
           <img 
-            src="/src/assets/images/sydney_to_monas_clean_1784478302269.jpg" 
+            src={sydneyToMonasBg} 
             alt="Sydney Opera House, Airplane and Monas Line Art" 
             className="w-full h-full object-cover scale-105"
             referrerPolicy="no-referrer"
