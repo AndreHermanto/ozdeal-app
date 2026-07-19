@@ -1,4 +1,6 @@
 import { HelpCircle, MessageSquare, MapPin, ShieldCheck, Heart } from "lucide-react";
+// @ts-ignore
+import ozDealLogo from "../assets/images/OzDeal.png";
 
 export default function Footer() {
   return (
@@ -10,7 +12,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src="/OzDeal.png" 
+                src={ozDealLogo} 
                 alt="OzDeal Logo" 
                 className="h-9 w-auto object-contain bg-white px-2 py-1.5 rounded-xl shadow-sm" 
                 referrerPolicy="no-referrer" 
