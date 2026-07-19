@@ -1,7 +1,5 @@
 import { Calculator, MessageSquare, Ship, Compass } from "lucide-react";
 import { motion } from "motion/react";
-// @ts-ignore
-import ozDealLogo from "../assets/images/OzDeal.png";
 
 interface NavbarProps {
   currentView: "home" | "calculator";
@@ -21,7 +19,7 @@ export default function Navbar({ currentView, setView, scrollToFaq }: NavbarProp
           className="flex items-center gap-3 group focus:outline-none cursor-pointer"
         >
           <img 
-            src={ozDealLogo} 
+            src="/ozdeal.png" 
             alt="OzDeal Logo" 
             className="h-11 w-auto object-contain transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] group-hover:scale-105 active:scale-95" 
             referrerPolicy="no-referrer" 
