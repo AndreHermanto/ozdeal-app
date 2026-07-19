@@ -1,0 +1,6 @@
+{
+  "name": "OzDeal",
+  "description": "Website promosi dan kalkulator harga estimasi untuk jasa titip beli barang internasional dari Australia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
