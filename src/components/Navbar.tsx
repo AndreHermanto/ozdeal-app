@@ -12,7 +12,7 @@ export default function Navbar({ currentView, setView, scrollToFaq }: NavbarProp
   const isHome = currentView === "home";
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-[#e4f4ff]/80 border-b border-blue-100/60 transition-all duration-300">
+    <nav className="sticky top-0 z-50 backdrop-blur-md bg-[#ebf7ff]/80 border-b border-blue-100/60 transition-all duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
         {/* Brand Logo with Kangaroo Vibe */}
         <button
