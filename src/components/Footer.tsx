@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <OzDealLogo size="sm" className="bg-white/10 p-1 rounded-xl shadow-inner border border-white/10" />
+              <OzDealLogo size="sm" onDarkBg={true} />
               <span className="font-display text-lg font-bold tracking-tight">OzDeal Australia</span>
             </div>
             <p className="text-sm text-slate-300 leading-relaxed max-w-sm">
