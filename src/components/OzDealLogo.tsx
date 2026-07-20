@@ -1,6 +1,6 @@
 import React from "react";
 // @ts-ignore
-import ozdealImg from "../assets/images/ozdeal.png";
+import ozdealImg from "../assets/images/ozdeal.jpg";
 
 interface OzDealLogoProps {
   className?: string;
