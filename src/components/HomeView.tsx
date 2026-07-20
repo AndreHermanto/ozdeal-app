@@ -17,7 +17,7 @@ import {
 import { motion, AnimatePresence } from "motion/react";
 import { CITY_RATES, formatCurrency } from "../utils";
 // @ts-ignore
-import sydneyToMonasBg from "../assets/images/sydney_to_monas_clean_1784478302269.jpg";
+import sydneyToMonasBg from "../assets/images/banner-sydney-jakarta.jpg";
 
 interface HomeViewProps {
   setView: (view: "home" | "calculator") => void;
@@ -93,10 +93,10 @@ export default function HomeView({ setView, faqRef }: HomeViewProps) {
       {/* 1. Hero Section */}
       <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 md:py-24 text-center relative overflow-hidden rounded-3xl">
         {/* Subtle decorative background graphic (Sydney Opera House to Monas) */}
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.14] select-none flex items-center justify-center transition-opacity duration-1000">
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.2] select-none flex items-center justify-center transition-opacity duration-1000">
           <img 
             src={sydneyToMonasBg} 
-            alt="Sydney Opera House, Airplane and Monas Line Art" 
+            alt="" 
             className="w-full h-full object-cover scale-105"
             referrerPolicy="no-referrer"
           />
