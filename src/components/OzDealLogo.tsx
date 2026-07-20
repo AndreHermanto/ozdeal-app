@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 // @ts-ignore
-import ozdealImg from "../assets/images/ozdeal.png";
+import ozdealImg from "../assets/images/ozdeal.jpg";
 
 interface OzDealLogoProps {
   className?: string;
@@ -17,14 +17,21 @@ export default function OzDealLogo({ className = "", size = "md", onDarkBg = fal
     xl: "h-24 w-24",
   }[size];
 
+  const [usePublicPath, setUsePublicPath] = useState(false);
+
   // If on a dark background, invert the image to make it white/light so it is clearly visible
   const colorClass = onDarkBg ? "brightness-0 invert" : "";
 
   return (
     <img
-      src={ozdealImg}
+      src={usePublicPath ? "/ozdeal.png" : ozdealImg}
       alt="OzDeal Logo"
       className={`${dimensions} object-contain transition-all duration-300 group-hover:scale-105 ${colorClass} ${className}`}
+      onError={() => {
+        if (!usePublicPath) {
+          setUsePublicPath(true);
+        }
+      }}
     />
   );
 }
