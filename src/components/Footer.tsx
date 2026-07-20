@@ -1,5 +1,4 @@
 import { HelpCircle, MessageSquare, MapPin, ShieldCheck, Heart } from "lucide-react";
-import OzDealLogo from "./OzDealLogo";
 
 export default function Footer() {
   return (
@@ -10,7 +9,6 @@ export default function Footer() {
           {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <OzDealLogo size="sm" onDarkBg={true} />
               <span className="font-display text-lg font-bold tracking-tight">OzDeal Australia</span>
             </div>
             <p className="text-sm text-slate-300 leading-relaxed max-w-sm">
