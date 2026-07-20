@@ -93,11 +93,11 @@ export default function HomeView({ setView, faqRef }: HomeViewProps) {
       {/* 1. Hero Section */}
       <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 md:py-24 text-center relative overflow-hidden rounded-3xl">
         {/* Subtle decorative background graphic (Sydney Opera House to Monas) */}
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.2] select-none flex items-center justify-center transition-opacity duration-1000">
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.1] select-none flex items-center justify-center transition-opacity duration-1000">
           <img 
             src={sydneyToMonasBg} 
             alt="" 
-            className="w-full h-full object-cover scale-105"
+            className="w-full h-full object-contain md:object-cover transition-all duration-300"
             referrerPolicy="no-referrer"
           />
         </div>
