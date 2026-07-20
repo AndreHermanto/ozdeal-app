@@ -199,7 +199,7 @@ export default function HomeView({ setView, faqRef }: HomeViewProps) {
                 Hitung Estimasi Biaya
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Gunakan kalkulator online kami untuk mendapatkan rincian tarif kargo dan jasa handling yang akurat, transparan, dan instan.
+                Gunakan kalkulator online kami untuk mendapatkan estimasi rincian tarif kargo dan jasa handling yang akurat, transparan, dan instan.
               </p>
             </div>
 
@@ -264,9 +264,9 @@ export default function HomeView({ setView, faqRef }: HomeViewProps) {
             <div className="w-14 h-14 rounded-2xl bg-sky-50 flex items-center justify-center text-sky-600 mb-6">
               <Clock className="w-7 h-7" />
             </div>
-            <h3 className="font-display font-bold text-lg text-[#003b73] mb-3">Rutin Berangkat Mingguan</h3>
+            <h3 className="font-display font-bold text-lg text-[#003b73] mb-3">Rutin Berangkat 3x Setiap Bulan</h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Tidak perlu menunggu kargo penuh lama-lama. Pengiriman udara kami dijadwalkan terbang setiap minggu, meminimalkan waktu tunggu barang Anda.
+              Tidak perlu menunggu kargo penuh lama-lama. Pengiriman udara kami dijadwalkan terbang 3x dalam sebulan, meminimalkan waktu tunggu barang Anda.
             </p>
           </div>
 
