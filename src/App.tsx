@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import HomeView from "./components/HomeView";
 import PriceCalculator from "./components/PriceCalculator";
@@ -10,6 +11,7 @@ export default function App() {
   return (
     <CurrencyProvider>
       <AppContent />
+      <Analytics />
     </CurrencyProvider>
   );
 }
